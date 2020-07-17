@@ -1,0 +1,41 @@
+//==============================
+// Mixins
+//==============================
+
+@mixin nav-link {
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px 0;
+    display: block;
+    width: 100%;
+    transition: 
+      background-color .2s ease-in-out, 
+      color .2s ease-in-out;
+}
+
+@mixin btn {
+    margin-top: 15px;
+    width: 100%;
+    color: #fff;
+    border: none;
+    padding: 10px 0;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+@mixin blockquote {
+    font-size: 1.5em;
+    font-weight: 300;
+    font-style: italic;
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: 8px solid $color-primary;
+    border-radius: 5px;
+}
+@mixin mq($break) {
+    @if $break == 'med' {
+        @media (min-width: $break-med) {
+            @content;
+        }
+    }
+}

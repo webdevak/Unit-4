@@ -1,0 +1,37 @@
+
+/* ============================================= */
+/*              Buttons                          */
+/* ============================================= */
+
+
+.btn {
+   @include btn;
+    @include mq('med') {
+      padding: 10px 30px;
+      .btn + .btn {
+        margin-left: 10px;
+      }
+    }
+  }
+  
+  .default {
+    background-color: #51ddfc;
+    
+
+  }
+  
+  .error {
+    background-color: #e4757a;
+  }
+  
+  .info {
+    background-color: #927bc1;
+  }
+  
+  .success {
+    background-color: #63cc82;
+  }
+  
+  .warning {
+    background-color: #fd7856;
+  }
