@@ -15,21 +15,41 @@
   }
   
   .default {
-    background-color: #51ddfc;
+    background-color: $color-default;
+    &:hover {
+      color: $default-light;
+      @include transition;
+    }
   }
   
   .error {
-    background-color: #e4757a;
+    background-color: $color-error;
+    &:hover {
+      color: $error-light;
+      @include transition;
+    }
   }
   
   .info {
-    background-color: #927bc1;
+    background-color: $color-info;
+    &:hover {
+      color: $info-light;
+      @include transition;
+    }
   }
   
   .success {
-    background-color: #63cc82;
+    background-color: $color-success;
+    &:hover {
+      color: $success-light;
+      @include transition;
+    }
   }
   
   .warning {
-    background-color: #fd7856;
+    background-color: $color-warning;
+    &:hover {
+      color: $warning-light;
+      @include transition;
+    }
   }

@@ -2,6 +2,12 @@
 // Mixins
 //==============================
 
+// Transiton 
+@mixin transition {
+  transition: color .4s ease-in;
+}
+
+// Nav-link
 @mixin nav-link {
     text-align: center;
     border-radius: 5px;
@@ -13,6 +19,7 @@
       color .2s ease-in-out;
 }
 
+//Button
 @mixin btn {
     margin-top: 15px;
     width: 100%;
@@ -23,6 +30,7 @@
     border-radius: 5px;
 }
 
+// Blockquote
 @mixin blockquote {
     font-size: 1.5em;
     font-weight: 300;
@@ -32,10 +40,88 @@
     border-left: 8px solid $color-primary;
     border-radius: 5px;
 }
+
+// Media Queries breakpoint 768px
 @mixin mq($break) {
     @if $break == 'med' {
         @media (min-width: $break-med) {
             @content;
         }
     }
+}
+
+
+// Column media-query styles
+@mixin col {
+    @include mq('med') {
+        .col-1 {
+        flex-basis: 8.33%;
+      }
+     }
+    
+     @include mq('med') {
+        .col-2 {
+        flex-basis: 16.67%;
+      }
+    }
+    
+    @include mq('med') {
+        .col-3 {
+          flex-basis: 25.00%;
+        }
+      }
+    
+      @include mq('med') {
+        .col-4 {
+          flex-basis: 33.33%;
+       }
+     }
+    
+     @include mq('med') {
+        .col-5 {
+          flex-basis: 41.67%;
+       }
+     }
+    
+     @include mq('med') {
+        .col-6 {
+          flex-basis: 50.00%;
+        }
+      }
+    
+      @include mq('med') {
+        .col-7 {
+          flex-basis: 58.33%;
+        }
+      }
+    
+      @include mq('med') {
+        .col-8 {
+          flex-basis: 66.67%;
+       }
+     }
+    
+     @include mq('med') {
+        .col-9 {
+          flex-basis: 75.00%
+        }
+      }
+    
+      @include mq('med') {
+        .col-10 {
+          flex-basis: 83.33%;
+       }
+      }
+    
+      @include mq('med') {
+        .col-11{
+          flex-basis: 91.67%;
+       }
+     }
+    
+     @include mq('med') {
+        .col-12{
+          flex-basis: 100%;
+       }
+     }
 }
