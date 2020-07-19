@@ -21,12 +21,15 @@
     border: 1px solid #ccc;
   }
   
-  .img-logo,.logo {
+  .img-logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    @media (min-width: 768px) {
-        margin-left: initial;
-        margin-right: initial;
-      }
+  }
+
+    @include mq('med') {
+      .logo {
+      margin-left: initial;
+      margin-right: initial;
+    }
   }

@@ -9,14 +9,14 @@
     display: block;
     width: 100%;
     transition: 
-      background-color .2s ease-in-out, 
+     background-color .2s ease-in-out, 
       color .2s ease-in-out;
 }
 
 @mixin btn {
     margin-top: 15px;
     width: 100%;
-    color: #fff;
+    color:  $color-links-secondary;
     border: none;
     padding: 10px 0;
     text-transform: uppercase;
