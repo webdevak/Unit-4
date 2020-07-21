@@ -17,7 +17,7 @@
   .default {
     background-color: $color-default;
     &:hover {
-      color: $default-light;
+      background-color: $default-light;
       @include transition;
     }
   }
@@ -25,7 +25,7 @@
   .error {
     background-color: $color-error;
     &:hover {
-      color: $error-light;
+      background-color: $error-light;
       @include transition;
     }
   }
@@ -33,7 +33,7 @@
   .info {
     background-color: $color-info;
     &:hover {
-      color: $info-light;
+      background-color: $info-light;
       @include transition;
     }
   }
@@ -41,7 +41,7 @@
   .success {
     background-color: $color-success;
     &:hover {
-      color: $success-light;
+      background-color: $success-light;
       @include transition;
     }
   }
@@ -49,7 +49,7 @@
   .warning {
     background-color: $color-warning;
     &:hover {
-      color: $warning-light;
+     background-color: $warning-light;
       @include transition;
     }
   }

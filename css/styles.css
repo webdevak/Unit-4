@@ -627,8 +627,8 @@ a {
 }
 
 .default:hover {
-  color: #9cecfd;
-  transition: color .4s ease-in;
+  background-color: #9cecfd;
+  transition: background-color .3s ease-in;
 }
 
 .error {
@@ -636,8 +636,8 @@ a {
 }
 
 .error:hover {
-  color: #f1b5b8;
-  transition: color .4s ease-in;
+  background-color: #f1b5b8;
+  transition: background-color .3s ease-in;
 }
 
 .info {
@@ -645,8 +645,8 @@ a {
 }
 
 .info:hover {
-  color: #bdafd9;
-  transition: color .4s ease-in;
+  background-color: #bdafd9;
+  transition: background-color .3s ease-in;
 }
 
 .success {
@@ -654,8 +654,8 @@ a {
 }
 
 .success:hover {
-  color: #9ddfb0;
-  transition: color .4s ease-in;
+  background-color: #9ddfb0;
+  transition: background-color .3s ease-in;
 }
 
 .warning {
@@ -663,8 +663,8 @@ a {
 }
 
 .warning:hover {
-  color: #feb4a2;
-  transition: color .4s ease-in;
+  background-color: #feb4a2;
+  transition: background-color .3s ease-in;
 }
 
 /* ============================================= */
