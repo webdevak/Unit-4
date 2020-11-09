@@ -1,4 +1,4 @@
 # Web Style Guide
  Web Style Guide
-An example of different styles demonstrated here from headers to buttons css hover and more! 
+An example of different styles demonstrated here from Typography, form elements, images and more! 
 SASS was used to put this project together!
